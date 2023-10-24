@@ -1,0 +1,208 @@
+footer {
+    background-color: #127475;
+    padding: 4rem 6rem 4rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    a {
+        color: #f5dfbb;
+        text-decoration: none;
+    }
+
+    h2 {
+        color: #f2542d;
+        font-weight: bold;
+    }
+
+    p {
+        color: #f5dfbb;
+    }
+
+    .Logo {
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .company_logo {
+            height: 85px;
+            width: 80px;
+        }
+
+        .our_Socialmedia_logo {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 35px;
+            width: 150px;
+
+            img {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .linkedin {
+                margin-left: 0.5rem;
+            }
+
+             .twitter {
+                 height: 110%;
+             }
+        }
+    }
+
+    .about-news {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 65vw;
+
+        .About_us {
+            margin-left: 2rem;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            nav {
+                ul {
+                    list-style-type: none;
+                    width: 100%;
+
+                    li {
+                        margin-bottom: 0.45rem;
+                    }
+                }
+            }
+
+        }
+
+        .Newsletter {
+            width: 40vw;
+
+            .title {
+                h2 {
+                    margin-bottom: 0.75rem;
+                }
+
+                p {
+                    margin-bottom: 0.62rem;
+                }
+            }
+
+            .button_newsletter {
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
+                width: 35vw;
+                height: 3rem;
+                border-bottom-left-radius: 15px;
+                border-top-right-radius: 15px;
+
+                input {
+                    padding-left: 1rem;
+                    outline: none;
+                    width: 100%;
+                    border-radius: 15px;
+
+                }
+
+                .button {
+                    height: 100%;
+                    background-color: #f2542d;
+                    width: 6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top-right-radius: 15px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 980px) {
+    footer {
+        .about-news {
+            flex-direction: column;
+            margin-left: 4rem;
+
+            .About_us {
+
+                margin-left: 0;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .Newsletter {
+                width: 85%;
+                margin-top: 2rem;
+                flex-wrap: wrap;
+
+                .button_newsletter {
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        padding: 4rem 5rem 4rem 5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+
+        .container-logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .Logo {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        padding: 4rem 4rem 4rem 4rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        .about-news {
+            margin-left: 0; 
+            
+            .Newsletter {
+                width: 100%;
+
+                .button_newsletter {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

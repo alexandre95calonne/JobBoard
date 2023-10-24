@@ -1,0 +1,79 @@
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 4rem;
+        font-size: 30px;
+    }
+
+    form {
+        width: 45%;
+
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(227, 225, 225);
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        input:focus {
+            outline-style: solid;
+            outline-width: 3px;
+            outline-color: #127475;
+        }
+
+        .sign-up {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 2.5rem;
+    
+            @keyframes gradientAnimation {
+    
+                0%,
+                100% {
+                    background-position: 0% 50%;
+                }
+    
+                50% {
+                    background-position: 100% 50%;
+                }
+            }
+    
+            button {
+                background: linear-gradient(60deg, #127475, #66FFCC);
+                background-size: 200% 200%;
+                animation: gradientAnimation 6s infinite;
+                color: #fff;
+                padding: 1.5rem;
+                border: none;
+                cursor: pointer;
+                box-shadow: 15px rgba(0, 0, 0, 0.2);
+                border-radius: 0.4rem;
+                font-size: 21px;
+                font-weight: bold;
+            }
+    
+            button:hover {
+                transform: scale(1.02);
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+
+    a {
+        color: #f2542d;
+        text-decoration: none;
+    }
+
+    .no-account {
+        margin-top: 2rem;
+    }
+}
